@@ -1,0 +1,107 @@
+# append from rightward:
+# user input, defaulting to 'spring'
+= $ spring
+
+# echo current words
+= 
+
+
+# append words into storage
+a = spring
+b = +a
+c = +a
+d = *(a,b,c)
+
+   spring 
+      summer
+    + (mist)
+       + (winter)
+     @
+
+
+  <> spring day...
+  <>      finding
+  <
+  < myself / the woman
+      ?> the woman
+    >${CIRCLE}
+
+  <> spring
+  <>    summer
+  <+
+  <+
+  >           =
+
+
+
+
+
+
+
+  spring
+      flower
+    
+      d r i f t s
+
+    w             .
+  a     a      .    .
+             y
+
+    ... summer's end
+
+
+
+
+
+
+
+
+
+     lost
+        f
+        o
+        u
+        n
+        d
+
+
+  f
+   i
+    n
+     d
+      i
+       n
+        g
+         myself
+
+
+
+         roller
+        l      c
+       a        o
+      n          a
+     o            s
+    i              ter
+   t                
+  o
+ m
+e
+
+
+
+spring
+  +winter
+  +summer
+
+
+
+
+    *         *
+           *
+       *
+  *     
+          *
+    *
+
+
+
