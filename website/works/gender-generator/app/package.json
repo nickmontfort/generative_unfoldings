@@ -1,0 +1,49 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@pixi/filter-dot": "^3.1.1",
+    "@pixi/filter-multi-color-replace": "^3.1.1",
+    "@tensorflow-models/face-landmarks-detection": "0.0.2",
+    "@tensorflow/tfjs-backend-webgl": "^2.4.0",
+    "@tensorflow/tfjs-converter": "^2.4.0",
+    "@tensorflow/tfjs-core": "^2.4.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "pixi.js": "^5.3.3",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-scripts": "3.4.4",
+    "seedrandom": "^3.0.5",
+    "string-replace-loader": "^3.0.1"
+  },
+  "scripts": {
+    "start": "rescripts start",
+    "build": "rescripts build",
+    "test": "rescripts test",
+    "eject": "rescripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "https://encoder-rat-decoder-rat.github.io/gender-generator/",
+  "devDependencies": {
+    "@rescripts/cli": "0.0.14",
+    "glslify-loader": "^2.0.0",
+    "raw-loader": "^4.0.2"
+  }
+}

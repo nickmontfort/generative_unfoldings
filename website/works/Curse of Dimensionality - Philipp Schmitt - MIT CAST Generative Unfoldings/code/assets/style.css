@@ -1,0 +1,92 @@
+/* 
+	The Computer Modern Unicode font was created in 1992 by Donald Knuth. It's used in scientific publishing, most notably LaTEX. Download and license:
+	http://canopus.iacp.dvo.ru/%7Epanov/cm-unicode/index.html
+*/
+@font-face {
+	font-family: Computer Modern;
+	src: url("cmunti.otf") format("opentype");
+}
+
+body, div, a, h1, h2, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: Computer Modern;
+	background: #fff;
+	font-size: 18px;
+}
+
+	h1 {
+		text-indent: -9999px;
+	}
+
+	#canvas {
+		background-color: #fff;
+	}
+
+	#diagrams {
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		position: fixed;
+		-webkit-perspective: 100vh;
+		        perspective: 100vh;
+		pointer-events: none;
+	}
+
+		img {
+		  position: absolute;
+		  -webkit-mix-blend-mode: multiply;
+		  -moz-mix-blend-mode: multiply;
+		  mix-blend-mode: multiply;
+		  -webkit-transition: -webkit-transform ease-in-out;
+		  transition: -webkit-transform ease-in-out;
+		  -o-transition: transform ease-in-out;
+		  transition: transform ease-in-out;
+		  transition: transform ease-in-out, -webkit-transform ease-in-out;
+		}
+
+	#caption {
+		bottom: 0;
+		position: fixed;
+		z-index: 99;
+		text-decoration: none;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+		#caption h2 {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+		  -ms-flex-align: center;
+		  align-items: center;
+		  -webkit-box-pack: center;
+		  -ms-flex-pack: center;
+		  justify-content: center;
+		  width: 100vw;
+		  font-size: 1em;
+		}
+
+		#caption a {
+			background: #fff;
+			display: block;
+			border-radius: 1em;
+			line-height: 1.25em;
+			padding: 1.5vw 1.75vw;
+			font-weight: normal;
+			text-align: left;
+			max-width: 45em;
+			margin: 0 auto 1em auto;
+			-webkit-box-shadow: 0 0 .35em rgba(0,0,0,.20);
+			        box-shadow: 0 0 .35em rgba(0,0,0,.20);
+			text-decoration: none;
+			color: #000;
+		}

@@ -1,0 +1,749 @@
+[
+  {
+    "Author": "Simone De Beauvoir",
+    "Text": "wives wish to choose how to make her vibrate",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 85,
+    "Training Data Size": "349,685"
+  },
+  {
+    "Author": "bell hooks",
+    "Text": "dominate women and men, will not have to be heterosexual",
+    "Model": "3-layer, 128-cell LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 20,
+    "Training Data Size": "61,898"
+  },
+  {
+    "Author": "bell hooks",
+    "Text": "white women alienated many participants in feminist movement, getting around women who were the most suffering people",
+    "Model": "3-layer, 128-cell LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 59,
+    "Training Data Size": "61,898"
+  },
+  {
+    "Author": "bell hooks",
+    "Text": "feminist activism is not merely the politically correct",
+    "Model": "3-layer, 128-cell LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 15,
+    "Training Data Size": "61,898"
+  },
+  {
+    "Author": "Simone De Beauvoir",
+    "Text": "this is the freedom to complain",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 82,
+    "Training Data Size": "349,685"
+  },
+  {
+    "Author": "Audre Lorde",
+    "Text": "i am the particular details of the erotic",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 5,
+    "Training Data Size": "213,773"
+  },
+  {
+    "Author": "Betty Freidan",
+    "Text": "the feminine mystique does not seem pathological because of the beautiful orgasm",
+    "Model": "3-layer, 128-cell LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 45,
+    "Training Data Size": "164,058"
+  },
+  {
+    "Author": "Simone De Beauvoir",
+    "Text": "yes, after her period, after a day, she will skillfully combine touching tears, heroic smiles, and coquetry",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 95,
+    "Training Data Size": "349,685"
+  },
+  {
+    "Author": "Simone De Beauvoir",
+    "Text": "the husband is always a male: he wants the power of virility",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 90,
+    "Training Data Size": "349,685"
+  },
+  {
+    "Author": "bell hooks",
+    "Text": "sisterhood: political solidarity between women",
+    "Model": "3-layer, 128-cell LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 14,
+    "Training Data Size": "61,898"
+  },
+  {
+    "Author": "Betty Freidan",
+    "Text": "one, young men must learn to be a full-time housewife",
+    "Model": "3-layer, 128-cell LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 15,
+    "Training Data Size": "164,058"
+  },
+  {
+    "Author": "Simone De Beauvoir",
+    "Text": "for the woman is, because she is a victim, ever devoted to a man when she is really the authoritarian",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 95,
+    "Training Data Size": "349,685"
+  },
+  {
+    "Author": "Audre Lorde",
+    "Text": "we live in, a world of color, by reluctance",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 1,
+    "Epochs": 10,
+    "Training Data Size": "213,773"
+  },
+  {
+    "Author": "Simone De Beauvoir",
+    "Text": "oh! menstruating woman, i am afraid.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 85,
+    "Training Data Size": "349,685"
+  },
+  {
+    "Author": "Betty Freidan",
+    "Text": "they told me to feel guilty about the orgasm for knowledge, which was, the commitment to be passive",
+    "Model": "3-layer, 128-cell LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 65,
+    "Training Data Size": "164,058"
+  },
+  {
+    "Author": "Betty Freidan",
+    "Text": "both, it seems, are bored of penis envy",
+    "Model": "3-layer, 128-cell LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 20,
+    "Training Data Size": "164,058"
+  },
+  {
+    "Author": "bell hooks",
+    "Text": "men who advocate feminism is an affirming gesture of care",
+    "Model": "3-layer, 128-cell LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 26,
+    "Training Data Size": "61,898"
+  },
+  {
+    "Author": "bell hooks",
+    "Text": "it is especially women who raise questions and criticize concepts of social status",
+    "Model": "3-layer, 128-cell LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 45,
+    "Training Data Size": "61,898"
+  },
+  {
+    "Author": "Betty Freidan",
+    "Text": "the true emptiness of the feminine mystique has not become a matter of educated women, but the woman's spirit in a big city",
+    "Model": "3-layer, 128-cell LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 10,
+    "Training Data Size": "164,058"
+  },
+  {
+    "Author": "Betty Freidan",
+    "Text": "a woman must be a great violinist",
+    "Model": "3-layer, 128-cell LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 5,
+    "Training Data Size": "164,058"
+  },
+  {
+    "Author": "Audre Lorde",
+    "Text": "a black woman's voice, i do not know, i choose you to speak, to love you, your lips, and i've tied you, your hands are not, but your lips are not tried, to be the fruit, and the wind is not the shape, i threw myself to find out, of how i was too much, as i am myself, in the street, the image of my mother's fumbling, my son catching the art, and i could not hear you, and i have no one, to have you, your children's hands, To my mother's furies, i could not ask myself, i could not get in a mouthful of worlds, you were not a mouthful of worlds, you were not the names, to show their hands, to decorate the evening, where i have come to learn, and how i shall come to love, and the final is, i am not dead",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 10,
+    "Training Data Size": "213,773"
+  },
+  {
+    "Author": "Simone De Beauvoir",
+    "Text": "her sexual life is not a conquest",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 75,
+    "Training Data Size": "349,685"
+  },
+  {
+    "Author": "Simone De Beauvoir",
+    "Text": "she is to be changed, into the man, but part of the practice is that it is for her to change people",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 75,
+    "Training Data Size": "349,685"
+  },
+  {
+    "Author": "Audre Lorde",
+    "Text": "i am black, in a perforated book, where i cannot live, in the hands of self-protection, the double room of a victim",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 10,
+    "Training Data Size": "213,773"
+  },
+  {
+    "Author": "Audre Lorde",
+    "Text": "i am very difficult, and black women can be the same way",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 5,
+    "Training Data Size": "213,773"
+  },
+  {
+    "Author": "Simone De Beauvoir + bell hooks",
+    "Text": "in the male imprisoned with a victory of the desire of exploitation, she is the primitives of his imagination, which is why they were not different",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.5,
+    "Epochs": 5,
+    "Training Data Size": "1,910,967"
+  },
+  {
+    "Author": "Simone De Beauvoir + bell hooks",
+    "Text": "it is a fight to control the experiences of the desire for the male who is all her defenses",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.5,
+    "Epochs": 15,
+    "Training Data Size": "1,910,967"
+  },
+  {
+    "Author": "Simone De Beauvoir + bell hooks",
+    "Text": "she wants to be a primary flower that is a source of personal life",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 30,
+    "Training Data Size": "1,910,967"
+  },
+  {
+    "Author": "Simone De Beauvoir + bell hooks",
+    "Text": "contemporary feminist movement is a striking constructive role in the present devoted to the woman who do not constitute the contingence of the serious and independent",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 20,
+    "Training Data Size": "1,910,967"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "love was the story of the rage of the supremacist struggle to recognize the externation of women of Color",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 5,
+    "Training Data Size": "1,199,314"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "at the, same time I was always seen as a consequence of the struggle to end sexist oppression",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 10,
+    "Training Data Size": "1,199,314"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "where white women, who shall see, that they will never live with her own perspective, which was the only way I could be free",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.5,
+    "Epochs": 20,
+    "Training Data Size": "1,199,314"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "I heard in the corner of Lenox Avenue, which was a strange interest of the experience of male planet, the female",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 30,
+    "Training Data Size": "1,199,314"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "the rich, the rich, the children in the world of the women's movement.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 5,
+    "Training Data Size": "273,709"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "they have had to offer radical political work. it is the primary medium for legitimating the fact that they are not anti-imperialist.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 5,
+    "Training Data Size": "273,709"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "i had to win, and i had to tell the fact that i could not bring myself to work, nor any place of it alone",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 5,
+    "Training Data Size": "273,709"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "for example, the isolated world is not a sign of black women",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 5,
+    "Training Data Size": "273,709"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "women have always been the task of the movement that the focus on \"common oppression\", that women are men",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 5,
+    "Training Data Size": "273,709"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "i had to be working in my mind, i felt like a feeling that i had to be afraid of my mother",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 5,
+    "Training Data Size": "273,709"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "but i was black, and i had the first feeling of the complexities of my life. but i had to examine the knowledge that i was one of them.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 5,
+    "Training Data Size": "273,709"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "the white woman has not been through a woman's search for blood",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 1,
+    "Epochs": 30,
+    "Training Data Size": "273,709"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "as black women, we are self and control.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 1,
+    "Epochs": 30,
+    "Training Data Size": "273,709"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "i have been, etched into a stone, like a woman's face",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 35,
+    "Training Data Size": "273,709"
+  },
+  {
+    "Author": "bell hooks + Audre Lorde",
+    "Text": "as black women we all had taught how to learn. for we can use each other's responsibility to the world, that will lead us to dismiss it for it is to recognize our deepest feelings as black",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 1,
+    "Epochs": 50,
+    "Training Data Size": "273,709"
+  },
+  {
+    "Author": "Audre Lorde + Betty Friedan",
+    "Text": "the future of a functional desert with the fact that the man was never accepted to be a housewife. But the strange streets are allowed to stand, and the streets are where I want to stay",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 25,
+    "Training Data Size": "1,677,201"
+  },
+  {
+    "Author": "Audre Lorde + Betty Friedan",
+    "Text": "In the day I thought you can't carry anything to be mind and speaking, of self defense of self realization and professional social status",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.5,
+    "Epochs": 25,
+    "Training Data Size": "1,677,201"
+  },
+  {
+    "Author": "Audre Lorde + Betty Friedan",
+    "Text": "to start, the streets are not really enough to be extremely and constantly in the world, so I had to want to be a woman? Audre: That's right. I was told that I was going to be a housewife. But is is that the desire to fill the time available.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 30,
+    "Training Data Size": "1,677,201"
+  },
+  {
+    "Author": "Betty Freidan + Simone De Beauvoir",
+    "Text": "he was a, strange problem of the woman who is a serious and sensual being",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 10,
+    "Training Data Size": "2,390,574"
+  },
+  {
+    "Author": "Betty Freidan + Simone De Beauvoir",
+    "Text": "the female transforms himself to a subject. The child is profitable as her particular professions.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.5,
+    "Epochs": 15,
+    "Training Data Size": "2,390,574"
+  },
+  {
+    "Author": "Betty Freidan + Simone De Beauvoir",
+    "Text": "female desire does not stand the period of a social consciousness, in the hordes of women's destiny, competing men and women.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.5,
+    "Epochs": 20,
+    "Training Data Size": "2,390,574"
+  },
+  {
+    "Author": "Betty Freidan + Simone De Beauvoir",
+    "Text": "the male should not be able to control her own children and the mother who has no name",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 30,
+    "Training Data Size": "2,390,574"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "i must be moving to the absence of my daughter. i loved her not to be a great answer but to be able to be a man.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 5,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "i am not a friend of my sister, the only thing i could not bear to speak, i have to leave the root, (urinating in a week), i would have to leave the next night, i watched the night of the grass, i was so busy, i saw my sister, as a new word, who had to wait a week, who had been still a friend",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 5,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "the vagabond in love by the soul of the english sex...it is already recognized in the young woman, in love, the love of her own self, and she also possess the magic of her body.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 5,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "in her passionate, she is the presence of her body, she is also resigned to herself. She is impreious, she is not to be prey.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 5,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "the woman's condition is not really to reveal her to her partner, as he possess the most difficult difference. She is not resigned to her husband, she is not to accept a balance of a real being.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 5,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "the day it is passing, into the sun. the word is like the pain, i have heard you",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 10,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "you will not get down, like a, woman holding the lover, who has been human and she grasps herself as a female, as a being",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 10,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "the husband, the demigod, who has not gained the love of the penis. he is a slave, the girl is satisfaied, a deeply thing that would be a free humiliation of her son; but it is why she is the more intimate, the child would have a negative destiny",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 15,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "more often adolescent men seek their own femininity; but this is mysterious as a process.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 15,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "men: we decided to eat them.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 15,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "a social scientist's psychiatrist changed the virtues of the american housewife",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 15,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "we were neither acceptable as other black lesbians; it was only a problem that we were of black",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 1,
+    "Epochs": 15,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "women are generally housewives, quite more challenging, so bored with the products of man",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 20,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "it is he who is already a woman who is unable to transcend her sovereign condition",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 20,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "in fact, it is that sexual society is not being defined. but women go along with it.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.5,
+    "Epochs": 20,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "the search for power and the family is always being passed and becoming an act of laughter",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 1,
+    "Epochs": 20,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "she does not dare easily grasp a universe with desire for her. She will not go to school or take any lovers.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 1,
+    "Epochs": 20,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "we have seen that woman must find it easy to give up her physical situation - even though the only world was done by their mothers",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 30,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "Audre Lorde + Simone De Beauvoir + bell hooks + Betty Friedan",
+    "Text": "it was for every white woman to say: \"not my whole and a problem",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Word Level",
+    "Temperature": 0.2,
+    "Epochs": 30,
+    "Training Data Size": "795,123"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "F the world",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 5,
+    "Training Data Size": "3,588,519"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "the woman is a contradiction of the woman",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 15,
+    "Training Data Size": "3,588,519"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "the man was a part of the ill described special state of the end of her own body",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 15,
+    "Training Data Size": "3,588,519"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "the game of our summer, did not care of the complaint that she is not in the world",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 15,
+    "Training Data Size": "3,588,519"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "eek, she was the professional paternal destiny",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 25,
+    "Training Data Size": "3,588,519"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "man is the most intense in the sexual activities of our oppression",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.5,
+    "Epochs": 30,
+    "Training Data Size": "3,588,519"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "be a man, who is supposed to be a serious convention of the female. In the same way, the mother is the strange and professional confidence of the world.",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 35,
+    "Training Data Size": "3,588,519"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "accurate, boring in contradictions and ambiguities, as the little girl is destined to get a desire to explain her money and sincerity of her condition",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.5,
+    "Epochs": 35,
+    "Training Data Size": "3,588,519"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "the man: a striking problem that has no name",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 40,
+    "Training Data Size": "3,588,519"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "the female would be destroyed by the extent to which the male situated himself as the lover",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.5,
+    "Epochs": 40,
+    "Training Data Size": "3,588,519"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "and the conflicts between the two sexes is a strange concern for the feminine mystique",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 45,
+    "Training Data Size": "3,588,519"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "I had not been all afraid of being a man",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 50,
+    "Training Data Size": "3,588,519"
+  },
+  {
+    "Author": "bell hooks + Betty Friedan + Audre Lorde + Simone De Beauvoir",
+    "Text": "a strange concept of parents, the superego is a man, a servitude is the mother",
+    "Model": "3-layer, 128-cell Bidirectional LSTMs",
+    "Word or Char Level": "Character Level",
+    "Temperature": 0.2,
+    "Epochs": 50,
+    "Training Data Size": "3,588,519"
+  }
+]

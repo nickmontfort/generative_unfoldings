@@ -1,0 +1,950 @@
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉ P ▉▉ S ▉▉ A ▉▉ A ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉
+
+STYLE for the Post-Surveillance Alternative Atlas
+    - www.jmescalante.info
+    - Dec - MMXX
+
+*/
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉ WEBFONT LOADING ▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 
+
+    Local font import using: https://google-webfonts-helper.herokuapp.com/
+    VT323 font designed by Peter Hull
+    Share Tech Mono designed by Carrois Apostrophe
+*/
+/* vt323-regular - latin */
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../_data/webfonts/vt323-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../_data/webfonts/vt323-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* share-tech-mono-regular - latin */
+@font-face {
+  font-family: 'Share Tech Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../_data/webfonts/share-tech-mono-v10-latin-regular.woff2') format('woff2'),/* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../_data/webfonts/share-tech-mono-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉ MAIN / GRAL ▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 
+    
+    Color palette influenced by the 'Papers Please Game' by Lucas Pope
+
+    Socialist green: #dee1d0
+    Comrade red: #c73625
+
+*/
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉ COLORS ▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+    
+
+body{
+    background-color: #dee1d0; /* Socialist Green */
+}
+/*TEmporary Paragraph style*/
+p.tempPixel{
+    font-family: 'VT323', monospace;
+    font-size: 11px;
+}
+
+nav{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 150px;
+    height: 25px;
+    z-index: 5000;
+/*    background-color: lightgray;*/
+}
+nav p{
+    font-family: 'VT323', monospace;
+    font-family: 'Share Tech Mono', monospace;
+    text-align: right;
+    font-size: 10px;
+}
+a:any-link{
+   color: black;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+span.navButton{
+    padding-bottom: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+/*nav:hover{*/
+span.navButton:hover{
+/*    background-color: yellow;*/
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    opacity: 1;
+}
+p.annotation{
+    position: relative;
+    font-family: 'VT323', monospace;
+    font-size: 6px;
+    margin: 0;
+}
+div.mapSubtleHr{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+    background-color: black;
+    z-index: -100;
+    opacity: 0.1;
+}
+h1{
+    font-family: 'VT323', monospace;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 5px;
+}
+p.charTextComment{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 7px;
+    letter-spacing: -.2px;
+}
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉ P5.js canvas ▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+
+#canvasDiv{
+    width: 320px;
+    height: 200px;
+    position: fixed;
+    z-index: 100;
+    bottom: 15px;
+    right: 15px;
+
+}
+#canvasDivContainer{
+/*    background-color: yellow;*/
+    position: fixed;
+    width: 320px;
+    height: 200px;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+}
+#canvasDivCentered{
+    position: relative;
+    width: 320px;
+    height: 200px;
+    left: -160px;
+    top: -100px;
+    /*
+    width: 320px;
+    height: 200px;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+*/
+}
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉ Canvas Loading Layer  ▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/*- = - - - - - - - - - - - - = - */
+#canvasTopLayerContainer{
+    position: fixed;
+    width: 320px;
+    height: 200px;
+    z-index: 4000;
+    left: 50%;
+    top: 50%;
+    
+}
+#canvasTopLayer{
+    position: relative;
+    width: 320px;
+    height: 200px;
+    left: -160px;
+    top: -100px;
+}
+
+#canvasTopLayer h1{
+    font-size: 55px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    letter-spacing: -7px;
+}
+#canvasTopLayer p{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    opacity: 0.8;
+    letter-spacing: 0px;
+     margin-left: 15px;
+    line-height: 5px;
+}
+p.loadingText{
+/*    color: #c73625;*/
+/*    background-color: #c73625;*/
+    border-bottom-color: #c73625;
+    border-bottom-style: solid;
+    padding-bottom: 4px;
+}
+#loadingRuler{
+    position: relative;
+    margin-left: 15px;
+/*    width: 290px;  Final */
+    width: 15px;
+    height: 2px;
+    background-color: black;
+}
+div.flexButtons{
+    display: none;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 290px;
+    margin: 15px;
+/*    background-color: yellow;*/
+}
+/* SOUND ON / OFF button*/
+div.butt{
+    width: 130px;
+    height: 37px;
+    background-color: black;
+    transition: background-color 0.19s ease;
+    cursor: pointer;
+    margin: 0;
+}
+div.butt:hover{
+     background-color: #c73625;
+}
+div.butt p{
+    position: relative;
+    font-family: 'VT323', monospace;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    left: -6px;
+    margin-top: 17px;
+}
+div.butt h5{
+    font-family: 'VT323', monospace;
+    text-align: center;
+    color: black;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-left: 2px;
+/*    margin-top: -9px;*/
+    opacity: 0.32;
+/*    background-color: yellow;*/
+}
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉ CONTADOR ▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉
+
+
+
+                                            .  .
+                                            .  .
+                                            .
+
+
+
+*/
+div.contador{
+    width: 45px;
+    height: 45px;
+    position: fixed;
+/*    background-color: yellow;*/
+    right: 15%;
+    top: 30%;
+}
+div.contador p{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    
+}
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉ HUMAN COUNTER ▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+div.humanCount{
+    position: fixed;
+    top: 10%;
+    left: 40px;
+    z-index: 1500;
+    background-color: white;
+    background-color: #dee1d0; /* Socialist Green */
+/*    display: none;*/
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s;
+    transition: opacity 1s ease;
+    
+}
+div.humanCount p{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 6px;
+    margin: 0;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+div.humanCount span.cifra{
+    font-family: 'VT323', monospace;
+    font-size: 9px;
+}
+
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉ TOP CROSS▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+div.topCross{
+    width: 30px;
+    height: 20px;
+    position: fixed;
+/*     background-color: yellow;*/
+    right: 50%;
+    top: 0;
+}
+div.topCross p{
+    position: relative;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 17px;
+    text-align: center;
+    margin: 0;
+    
+}
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉ NAVEGANTE CROSS ▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+div.naveganteCross{
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    /* background-color: yellow;*/
+    right: 50%;
+    top: 20%;
+}
+div.naveganteCross p{
+    position: relative;
+    font-family: monospace;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    
+}
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉ LOWER INDICATOR ▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+div.lowerIndicator{
+    position: fixed;
+    left: 50%;
+    bottom: 0%;
+    width: 5px;
+    height: 15px;
+    background-color: black;
+    
+}
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉ LOWER SQUARE INDICATOR ▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+div.lowerSquareIndicator{
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    display: none;
+}
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉ CENTER POETRY▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+div.centerPoetry{
+    width: 220px;
+    height: 15px;
+    position: fixed;
+    left: 50%;
+    top: 85%;
+/*    background-color: yellow;*/
+    overflow: visible;
+    margin: 0;
+    z-index: 3500;
+    display: none;
+}
+div.centerPoetryInnerContainer{
+    position: relative;
+    left: -109px;
+    
+}
+div.centerPoetry p{
+    font-family: 'Share Tech Mono', monospace;
+    font-family: 'VT323', monospace;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+/*    background-color: #c73625;*/
+    background-color: black;
+    opacity: 0.75;
+    width: auto;
+    margin-left: 0px;
+    transition: background-color 0.75s;
+     transition: color 0.5s;
+}
+
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉ CENTER POETRY BOOK VERSION ▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+div.bookVirilio{
+    position: absolute;
+    right: 12%;
+    top: 80%;
+    width: 550px;
+    height: 200px;
+    z-index: 5000;
+    opacity: 0.83;
+    display: none;
+/*    background-color: red;*/
+}
+div.virilioLine{
+    width: 100%;
+    height: 49px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+h6{
+    position: relative;
+    top: 10px;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 26px;
+    vertical-align: middle;
+    margin-top: 49px;
+    
+}
+
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉ Targets/Victims ▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+
+/* A testing circle to check the location... */
+div.lilCircleBox{
+    position: relative;
+    width: 250px;
+    height: 150px;
+    /*background-color: white;*/
+    border-color: black;
+    border-bottom-color: #dee1d0; /* Socialist Green */
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+/*    overflow: hidden;*/
+}
+
+div.lilCircle{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: red;
+    z-index: 10;
+}
+p.lilCircle{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: red;
+    z-index: 10;
+}
+
+div.lilCircleBoxComments{
+    position: relative;
+    /*background-color: red;*/
+    margin-top: -0px;
+    padding: 0;
+    height: 5px;
+    height: auto;
+    background-color: white;
+    background-color: #dee1d0; /* Socialist Green */
+    overflow: visible;
+}
+div.commentsInTheBox{
+    position: absolute;
+
+}
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉  Victim Markers  ▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+div.victimMarker{
+    position: relative;
+    width: 10px;
+/*    background-color: yellow;*/
+    z-index: 1000;
+    
+}
+div.victimMarker h3{
+    font-family: 'Share Tech Mono', monospace;
+    font-family: 'VT323', monospace;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: -10px;
+    text-align: center;
+}
+div.victimMarker p{
+    margin: 0;
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉ ASCII  ▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+
+/*   FLEXBOX   */
+
+div.flexRow{
+/*    position: absolute;*/
+    display: flex;
+    width: 250px;
+    flex-flow: nowrap;
+    flex-direction: row;
+   background-color: yellow;
+}
+
+div.flexCell p{
+    font-family: 'Share Tech Mono', monospace;
+/*    font-family: monospace;*/
+    color: black;
+    font-size: 7.5px; /*13.5 or 14.5 works*/
+    opacity: 0.65;
+    z-index: 1;
+    margin: 0px;
+    padding: 0px;
+    line-height: 90%;
+    letter-spacing: -0.1px;
+/*    background-color: aqua;*/
+    white-space:pre;
+    text-align: left;
+}
+div.flexCell{
+    margin: 0px;
+    padding: 0px;
+/*    position: absolute;*/
+/*    background-color: darkblue;*/
+}
+
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉ ABOUT OVERLAY ▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+
+
+div.aboutContainer{
+    position: fixed;
+    z-index: 5000;
+    width: 50%;
+    height: 100%;
+    top: 12.5%;
+    top: 0px;
+    left: 50%;
+    display: none;
+}
+div.aboutRedLayer{
+    position: relative;
+    width: 350px;
+    height: 100%;
+    left: -175px;
+    background-color: #c73625; /* RED */
+/*    top: 450px;*/
+}
+div.aboutContainer h1{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 1px;
+    color: #dee1d0;
+}
+div.aboutContainer h2{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    color: #dee1d0;
+}
+div.aboutContainer p{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11.5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    color: #dee1d0;
+}
+
+div.aboutContainer p.credits{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 8.5px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 0;
+}
+div.bottomAbout{
+    position: absolute;
+    bottom: 10px;
+    background-color: #c73625; /* RED */
+    
+}
+div.bottomAbout p{
+    color: black;
+}
+div.aboutContainer a:any-link{
+    color: #dee1d0;
+/*    opacity: 0.67;*/
+}
+div.bottomAbout p a:any-link{
+    color: black;
+}
+#aboutRuler{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 310px;
+    height: 2px;
+    background-color: #dee1d0;
+    background-color: black;
+    margin-bottom: 20px;
+}
+p.year{
+    text-align: right;
+    font-size: 3.5px;
+    opacity: 0.95;
+    letter-spacing: 2px;
+}
+/*NAV CLOSE*/
+div.textButton{
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+div.textButton p{
+    font-family: 'VT323', monospace;
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    font-size: 10px;
+}
+div.textButton:hover{
+/*    background-color: yellow;*/
+/*
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+*/
+    opacity: 0.99;
+}
+
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉ BOOK PAGE TEST ▉▉▉▉▉▉  (might erase0 */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+
+div.bookPageMainContainer{
+    position: fixed;
+/*    background-color: aqua;*/
+    width: 1280px;
+    height: 450px;
+    top: 50%;
+    left: 50%;
+    margin-top: -307.4px;
+    display: none;
+}
+
+
+div.bookPageSaverPage{
+    width: 2412px;
+    height: 3074px;
+    /*    background-color: mediumpurple;*/
+    background-color: #dee1d0;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    /*
+        transform: scale(0.1);
+        transform: translate(-400px, -400px);
+    */
+    transform-origin: top left;
+    transform: scale(0.2);
+    border-color: black;
+    border-style: solid;
+    top: 0;
+    
+/*
+    display: none;
+    opacity: 0;
+*/
+}
+div.bookPageSaverPageExtra{
+/*
+    width: 2412px;
+    height: 3074px;
+*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1100;
+/*
+    display: none;
+    opacity: 0;
+*/
+}
+
+div.bookPageText{
+    position: absolute;
+/*    display: none;*/
+}
+.bookPageTextAnnotation{
+    font-family: 'VT323', monospace;
+    position: absolute;
+/*    color: red;*/
+}
+
+div.bookPageTopRightElement{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 0;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+}
+div.bookPageTopLeftElement{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+}
+div.bookPageBottomRightElement{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+}
+div.bookPageBottomLeftElement{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+}
+div.bookPageSaverPage p{
+    font-size: 17px;
+}
+
+/* Canvas container inside the Page 1 */
+div.canvasBookPageOut{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+/*    background-color: red;*/
+/*    z-index: 200000;*/
+}
+div.canvasBookPageIn{
+    position: relative;
+    width: 1280px;
+    height: 800px;
+    left: 50%;
+    top: 50%;
+    margin-left: -640px;
+    margin-top: -400px;
+/*    z-index: 200000;*/
+/*
+    border-color: yellow;
+    border-width: thick;
+    border-style: solid;
+    background-color: gray;
+*/
+}
+
+
+/* ------------ Book Page INFO -----------  */
+div.bookPageInfoContainer{
+    width: 350px;
+    height: 250px;
+/*    background-color: aquamarine;*/
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -390px;
+    margin-top: 0px;
+    display: none;
+}
+
+div.bookPageInfoContainer h1{
+    font-size: 55px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    letter-spacing: -7px;
+    text-align: right;
+}
+div.bookPageInfoContainer p{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    opacity: 0.8;
+    letter-spacing: 0px;
+    margin-left: 15px;
+    margin-right: 0px;
+
+}
+div.bookPageInfoContainer h2{
+    font-family: 'Share Tech Mono', monospace;
+    text-align: right;
+    font-size: 11px;
+    margin-left: 15px;
+    padding-bottom: 4px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
+div.bookPageInfoContainer h3{
+    font-family: 'Share Tech Mono', monospace;
+    text-align: left;
+    font-size: 11px;
+    margin-left: 15px;
+    margin-bottom: -10px;
+    color: #c73625;
+}
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉ FLEX THUMBS PAGE (4) ▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+div.page4FlexContainer{ /* ----- The main container for all the page 4 */
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 4%;
+    display: "none";
+}
+div.page4CellHeader{ /* --------- HEADER CELL*/
+    position: static;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0px;
+    margin-bottom: -79px;
+    margin-top: -49px;
+/*    background-color: red;*/
+    
+}
+div.page4CellHeader img{ 
+    width: 100%;
+}
+div.page4FlexContainer p{ /* ---- Tiny Paragraph (seed) text*/
+    font-size: 8px;
+    margin-bottom: 9px;
+    margin-left: 5px;
+    opacity: 0.8;
+}
+div.page4Row{/* ---------------- The ROW container (page 4) */
+    position: relative;
+    left: 21px;
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: space-between;
+/*    background-color: aquamarine;*/
+    padding-bottom: 0px;
+    margin-top: -64px;
+}
+div.page4Cell{/* --------------- Page 4 CELLS */
+    width: 49%;
+/*    height: 200px;*/
+/*    background-color: aqua;*/
+}
+div.page4Cell img{
+    width: 100%;
+}
+
+
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉ FLEX THUMBS PAGE (5) ▉▉▉▉▉▉▉ */
+/* ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ */
+
+
+div.page5FlexContainer{ /* ----- The main container for all rows */
+    position: relative;
+    width: 90%;
+    left: 5%;
+    top: 4%;
+    display: "none";
+}
+
+div.page5Row{/* ---------------- The ROW container */
+    width: 100%;
+    height: 187px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: space-between;
+/*    background-color: aquamarine;*/
+    padding-bottom: 55px;
+}
+div.page5Cell{/* -------------- Container for each cell */
+    width: 305px;
+    height: auto;
+/*    background-color: red;*/
+}
+div.page5Cell img{
+    width: 100%;
+}
+div.page5Cell p{
+    font-size: 8px;
+    margin-bottom: 9px;
+    margin-left: 5px;
+    opacity: 0.8;
+}
+
+
+

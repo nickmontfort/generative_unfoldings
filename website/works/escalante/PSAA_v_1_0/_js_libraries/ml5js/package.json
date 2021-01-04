@@ -1,0 +1,41 @@
+{
+  "name": "ml5-data-and-models-server",
+  "version": "0.0.1",
+  "description": "A repo to download and serve data and models locally allowing ml5 to run without a web connection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "download:bodypix": "node ./scripts/download-models/index.js bodypix",
+    "download:sketchrnn": "node ./scripts/download-models/index.js sketchrnn",
+    "download:unet": "node ./scripts/download-models/index.js unet",
+    "download:sentiment": "node ./scripts/download-models/index.js sentiment",
+    "download:faceapi": "node ./scripts/download-models/index.js faceapi",
+    "download:soundclassification": "node ./scripts/download-models/index.js soundclassification",
+    "download:mobilenet": "node ./scripts/download-models/index.js mobilenet",
+    "download:yolo": "node ./scripts/download-models/index.js yolo",
+    "download:posenet": "node ./scripts/download-models/index.js posenet",
+    "download:posenet2": "node ./scripts/download-models/index.js posenet2",
+    "download:all": "node ./scripts/download-models/index.js all",
+    "serve": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ml5js/ml5-data-and-models-server.git"
+  },
+  "author": "ml5js",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ml5js/ml5-data-and-models-server/issues"
+  },
+  "homepage": "https://github.com/ml5js/ml5-data-and-models-server#readme",
+  "dependencies": {
+    "es6-promise": "^4.2.8",
+    "express": "^4.17.1",
+    "isomorphic-fetch": "^2.2.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "zlib": "^1.0.5"
+  }
+}
