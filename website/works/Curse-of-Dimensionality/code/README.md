@@ -28,4 +28,4 @@ Each diagram collage is captioned using a random quote, drawn from a selection c
 3. See the *script* folder for licensing of included software libraries.
 
 ## Thanks ...
-... to MIT CAST and in particular Nick Montfort, Leila Wheatley Kinney, and William Lockett for supporting this project.
+... to MIT CAST and in particular Nick Montfort, Leila Wheatley Kinney, William Lockett, and Brent Bailey for supporting this project.
