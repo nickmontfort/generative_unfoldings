@@ -1,24 +1,28 @@
-let params;
-let seed;
-let page;
-let started = false,
+//lee2sman 2021
+let params,
+	seed,
+	page,
+	started = false,
 	fadingIn = false,
 	song,
 	talk = [],
-	frame = false;
-let player,
+	frame = false,
+	bw = true,
+	roomTimer = 3000,
+	colorTimer = 3000,
+	player,
 	roomObjs = [],
 	npcObjs = [],
 	roomImg = [],
-	npcImg = [];
-let totalSounds = 5;
-let items = 21,
+	npcImg = [],
+	totalSounds = 5,
+	items = 21,
 	currentItems,
 	npcs = 17,
-	currentNPCs;
-let players = 22,
-	playerImgs = [];
-let title,
+	currentNPCs,
+	players = 22,
+	playerImgs = [],
+	title,
 	titleWords = [
 		"Birth",
 		"Introduction",
@@ -56,81 +60,80 @@ let title,
 		"Victory",
 		"Trickery",
 		"Involuntary"
-	];
-let events = [
-	"Arrival",
-	"Birth",
-	"Introduction",
-	"Reveal",
-	"Departure",
-	"Leaving",
-	"Exiting",
-	"Embarking",
-	"Parting",
-	"Giving",
-	"Delivery",
-	"Donation",
-	"Presentation",
-	"Endowment",
-	"Receiving",
-	"Acceptance",
-	"Discovery",
-	"Reveal",
-	"Exposure",
-	"Loss",
-	"Separation",
-	"Death",
-	"Abandonment",
-	"Deceit",
-	"Trickery",
-	"Con",
-	"Fool",
-	"Victory",
-	"Success",
-	"Overcoming",
-	"Triumph",
-	"Passage",
-	"Defeat",
-	"Fall",
-	"Failure",
-	"Reversal",
-	"Enlightenment",
-	"Awakening",
-	"Rise",
-	"Improvement",
-	"Learning",
-	"Education",
-	"Initiation",
-	"Acceptance",
-	"Embracing",
-	"Welcoming",
-	"Joining",
-	"Expulsion",
-	"Separation",
-	"Removal",
-	"Rejection",
-	"Elimination",
-	"Ritual",
-	"Ceremony",
-	"Rite",
-	"Process",
-	"Injury",
-	"Wounding",
-	"Hurting",
-	"Insulting",
-	"Healing",
-	"Improvement",
-	"Mending",
-	"Joining",
-	"Rebirth",
-	"Renewal",
-	"Return"
-];
-let talkTimer = 6000,
+	],
+	events = [
+		"Arrival",
+		"Birth",
+		"Introduction",
+		"Reveal",
+		"Departure",
+		"Leaving",
+		"Exiting",
+		"Embarking",
+		"Parting",
+		"Giving",
+		"Delivery",
+		"Donation",
+		"Presentation",
+		"Endowment",
+		"Receiving",
+		"Acceptance",
+		"Discovery",
+		"Reveal",
+		"Exposure",
+		"Loss",
+		"Separation",
+		"Death",
+		"Abandonment",
+		"Deceit",
+		"Trickery",
+		"Con",
+		"Fool",
+		"Victory",
+		"Success",
+		"Overcoming",
+		"Triumph",
+		"Passage",
+		"Defeat",
+		"Fall",
+		"Failure",
+		"Reversal",
+		"Enlightenment",
+		"Awakening",
+		"Rise",
+		"Improvement",
+		"Learning",
+		"Education",
+		"Initiation",
+		"Acceptance",
+		"Embracing",
+		"Welcoming",
+		"Joining",
+		"Expulsion",
+		"Separation",
+		"Removal",
+		"Rejection",
+		"Elimination",
+		"Ritual",
+		"Ceremony",
+		"Rite",
+		"Process",
+		"Injury",
+		"Wounding",
+		"Hurting",
+		"Insulting",
+		"Healing",
+		"Improvement",
+		"Mending",
+		"Joining",
+		"Rebirth",
+		"Renewal",
+		"Return"
+	],
+	talkTimer = 6000,
 	talking = false,
 	roomTimeout = 6000,
 	timer = 3000,
-	roomTimer = 3000,
 	questNum,
 	questions = [
 		"What am I saying to myself?",
@@ -156,9 +159,8 @@ let talkTimer = 6000,
 		"Is this something within your power to change?",
 		"Are they positive or negative memories?",
 		"ERR0R"
-	];
-
-let textX = 30,
+	],
+	textX = 30,
 	f,
 	f2,
 	overpass,
@@ -192,10 +194,6 @@ function preload() {
 	f2 = loadFont("assets/font/DS-TERM.TTF");
 	overpass = loadFont("assets/font/overpass-mono-bold.ttf");
 
-	//song = loadSound("assets/snd/wrongsong.mp3");
-
-	//song.playMode("untilDone");
-
 	for (let i = 0; i < totalSounds; i++) {
 		talk[i] = loadSound("assets/snd/talk" + i + ".mp3");
 		talk[i].playMode("untilDone");
@@ -207,6 +205,7 @@ function setup() {
 
 	if (params.page) {
 		createCanvas(4921, 7360); //resize for 300dpi!
+		talking = true;
 	} else {
 		createCanvas(windowWidth, windowHeight);
 	}
@@ -238,7 +237,6 @@ function draw() {
 }
 
 function main() {
-	//noCursor();
 	background(226, 226, 216);
 
 	if (millis() > roomTimeout) {
@@ -250,12 +248,13 @@ function main() {
 
 	drawItems();
 	drawNPCs();
-	//drawSprites();
 
 	drawSprite(player);
 	checkForConvo();
 	haveConvo();
 	drawRoomText();
+
+	colorChanger();
 }
 
 function mousePressed() {
@@ -271,7 +270,6 @@ function startScreen() {
 	if (width < 600) {
 		background(0);
 	}
-	//background(255);
 	fill(0);
 	strokeWeight(5);
 	fill(255);
@@ -428,7 +426,15 @@ function haveConvo() {
 			textSize(36);
 			fill(0);
 			rectMode(CENTER);
-			rect(width / 2, height / 2, width / 3, height / 5);
+
+			if (params.page) {
+				//magic nums to make print sizing look better
+				textSize(88);
+				rect(width / 2, height / 2, width / 3, height / 10);
+			} else {
+				rect(width / 2, height / 2, width / 3, height / 5);
+			}
+
 			fill(0, 255, 0);
 			textAlign(LEFT, CENTER);
 
@@ -479,12 +485,13 @@ function resetRoom() {
 	}
 
 	//
-	if (params.page) {   //if print, add more images since page is huge
-	  currentItems = int(random(6,10))
-	  currentNPCs = int(random(9,18))
+	if (params.page) {
+		//if print, add more images since page is huge
+		currentItems = int(random(6, 10));
+		currentNPCs = int(random(9, 18));
 	} else {
-	  currentItems = int(random(2, 7));
-	  currentNPCs = int(random(2, 7));
+		currentItems = int(random(2, 7));
+		currentNPCs = int(random(2, 7));
 	}
 
 	for (let i = 0; i < currentItems; i++) {
@@ -500,6 +507,17 @@ function resetRoom() {
 
 		npcObjs[i].velocity.x = random(-1.5, 1.5);
 		npcObjs[i].velocity.y = random(-1.5, 1.5);
+	}
+}
+
+function colorChanger() {
+	if (millis() > colorTimer) {
+		colorTimer = millis() + random(20000, 44000);
+		bw = !bw;
+	}
+
+	if (bw) {
+		filter(THRESHOLD, 0.65);
 	}
 }
 
