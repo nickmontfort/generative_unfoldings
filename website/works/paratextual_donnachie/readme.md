@@ -1,4 +1,4 @@
-# Deprecated --> now This Indignant Page 
+# Deprecated :) --> now [This Indignant Page](https://github.com/brondle/generative_unfoldings/tree/master/website/works/thisIndignantPage)
 
 # The politics of the paratextual [proof of concept]
 https://karenanndonnachie.github.io/para/MIT_D_9/index.html
