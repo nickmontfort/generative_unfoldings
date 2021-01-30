@@ -21,7 +21,7 @@ Once launched the artwork will cycle automatically through randomly selected exc
 * m = download double-page as high-res PNG with didactic txt file
 
 ### Some notes on the code
-The project is written using p5.js (http://p5js.org), based on Javascript/HTML5. 
+The project is written using [p5.js](http://p5js.org), based on Javascript/HTML5. 
 Additionally this work utilizes the following external libraries and functions:
 * P5 sound library: p5sound.js
 * RiTa Natural language processing library
@@ -54,4 +54,5 @@ This series of works attempt to disrupt the machinic logic colonizing contempora
 Donnachie and Simionato are an artist duo working in the expanded fields of computational art and design since the 1990s. Their artworks and designs have won the highest international awards and critical recognition in their fields, and have been featured in a number of major publications and international press. They received the Tokyo Type Directors Club Award in 2019 for a robotic-scribe that writes every tweet by Donald Trump and again in 2020 for their AI generated books. One of these books, generated after an AI reading of M.D.Vernon’s Psychology of Perception, received the Cornish Family Prize for Art and Design Book Publishing, the most significant award of its kind. In 2020, they were awarded the Robert Coover Award for Electronic Literature.
 
 http://www.atomicactivity.com/books/
+
 http://karenandy.com
