@@ -1,5 +1,5 @@
 /*
-  THIS INDIGNANT PAGE, 2021
+  THIS INDIGNANT PAGE: Politics of the Paratextual, 2021
   by Karen ann Donachie and Andy Simionato 
   http://karenandy.com
   This generative work has been created for the 2021 MIT CAST Symposium exhibition, 
