@@ -20,8 +20,8 @@
   The authors are grateful to the administrators, coders, and designers of these resources & libraries.
  */
 var para="", title="";
-var upTo=0, seed=0;
-var pd, shownWords, fadey, pageNum, first, sentSent, sentence, middle, right, left, columns
+var upTo=0;
+var pd, shownWords, fadey, first, sentSent, sentence, middle, right, left, columns
     , pages, ID, polySynth, tone, size, rParams, sentVal, sentimentRef, sentimentRef2, l, word
     , rWord, syll, pos1, pos2, sentVal, boxh, boxw, currfreq, played, format;
 var fontSizes = [36, 72, 96];
@@ -55,21 +55,11 @@ function setup() {
     ignoreCase: true, 
     ignorePunctuation: true
   };
-  let params = getURLParams();
-  if(params.seed >0 && params.page>0){
-    seed=params.seed;
-    toPrint=true;
-    pageNum=params.page;
-    randomSeed(seed+pageNum);    
-    loadStrings(random(corpus), newText);
-    pixelDensity(2);
-    if (pageNum==1){format="single";}
-    else {format="doublePage";}
-    toPrint=true;
-    sent=false;
-  } else {pageNum=0;seed=0;loadStrings(random(corpus), newText);} 
-  if (height>width){columns=random([1, 4, 4, 4]);baseFontSize=18;
-  } else{columns=random([1, 1, 2, 4, 4]);}
+  loadStrings(random(corpus), newText);
+  columns = random([1, 1, 2, 4, 4]);
+  if (height>width) {
+    columns=random([1, 4, 4, 4]);
+    baseFontSize=18;}
 }
 function draw() {
   background(bgcol); 
