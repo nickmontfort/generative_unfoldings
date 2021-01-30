@@ -268,7 +268,7 @@ function playSynth(tone, size, syll) {
   }
 }
 function writeDida() {
-  let dida = createWriter('IndignantPage_dida_'+seed+'_'+pageNum+'.txt');
+  let dida = createWriter('IndignantPage_dida_'+hour()+':'+minute()+' '+month()+'/'+day()+'/'+year()+'.txt');
   dida.write(['This Indignant Page, 2021\nKaren ann Donnachie & Andy Simionato\nA generative reading of: '+ title+'\nDownloaded @ '+hour()+':'+minute()+' '+month()+'/'+day()+'/'+year()+'\n\nText Excerpt : '+ para+'\n']);
   console.log(baseFontSize);
   if (debug==true){
