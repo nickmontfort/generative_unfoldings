@@ -1,4 +1,7 @@
 # unfoldings
+http://wowm.org/unfolding/indexWithSeed6T.htm
+this one works best for now
+
 
 sound files -  to be uploaded
 

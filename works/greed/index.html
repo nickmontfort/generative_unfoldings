@@ -206,7 +206,8 @@
 
 			var SCREEN_WIDTH = window.innerWidth;
 			var SCREEN_HEIGHT = window.innerHeight;
-
+			const PAGE_WIDTH = 2412;
+			const PAGE_HEIGHT = 3074;
 			var renderer, container, stats;
 
 			var camera, scene, controls;
@@ -238,7 +239,7 @@
 			const page = parseInt(urlParams.get("page"));
 			//create a random number generator with our designated seed
 			const rng = new Math.seedrandom(seed);
-			var screenshotFrame;
+			var randomNumber;
 
 			init();
 			animate();
@@ -339,10 +340,10 @@
 				var specularMap = new THREE.WebGLRenderTarget( 1024, 1024, pars );
 				specularMap.texture.generateMipmaps = false;
 
-				var diffuseTexture1 = textureLoader.load( "./textures/difTex001.png" );
-				var diffuseTexture2 = textureLoader.load( "./textures/difTex002.png" );
-				//on purpose here
-				var detailTexture = textureLoader.load( "textures/consenttocollectmydata.png" );
+				var diffuseTexture1 = textureLoader.load( "textures/difTex001.png" );
+				var diffuseTexture2 = textureLoader.load( "textures/difTex002.png" );
+				//missing on purpose here
+				var detailTexture = textureLoader.load( "textures/detTexa.png" );
 
 				diffuseTexture1.wrapS = diffuseTexture1.wrapT = THREE.RepeatWrapping;
 				diffuseTexture2.wrapS = diffuseTexture2.wrapT = THREE.RepeatWrapping;
@@ -438,13 +439,9 @@
 				if (seed && page) {
 					for (var i = 1; i <= page - 1; i++) {
 						// every time this is called, it hits our random number generator inside the getRandomInt function
-						getRandomInt(50, 500);
-
-					    //console.log(getRandomInt(100, 1000));
-
+						getRandomInt(1, 1000);
 					}
-					// will take screenshot between frame 100 and 1000
-					screenshotFrame = getRandomInt(50, 500);
+					randomNumber = getRandomInt(1, 1000);
 				}
 
 			}
@@ -499,8 +496,7 @@
 			    // set camera and renderer to desired screenshot dimension
 			    camera.aspect = width / height;
 			    camera.updateProjectionMatrix();
-			    // renderer.setSize(  width, height );
-				renderer.setSize(  2412, 3074 );
+			 	renderer.setSize(  width, height );
 
 
 			    renderer.render( scene, camera, null, false );
@@ -547,8 +543,8 @@
 			//return File Name
 
 			function defaultFileName (ext, seed, page) {
-				var prng = new Math.seedrandom();
-				var randomNumber =  prng.int32();
+				//var prng = new Math.seedrandom();
+				//var randomNumber =  prng.int32();
 				str = `${seed}_${page}${ext}`;
 				return str;
 			}
@@ -556,21 +552,14 @@
 
 			var frame = 0;
 			function animate(){
-
-			if (screenshotFrame !== undefined && frame === screenshotFrame) {
-				takeScreenshot( SCREEN_WIDTH, SCREEN_HEIGHT, seed, page);
 				requestAnimationFrame( animate );
 				render();
-			} else {
-				requestAnimationFrame( animate );
-				render();
-			}
-			frame++;
+				frame++;
 
 			}
 
 
-
+			var tookScreenshot = false;
 			function render() {
 
 				var delta = clock.getDelta();
@@ -603,7 +592,17 @@
 						animDelta = THREE.Math.clamp( animDelta + 0.00075 * animDeltaDir, 0, 0.05 );
 						uniformsNoise[ 'time' ].value += delta * animDelta;
 
-						uniformsNoise[ 'offset' ].value.x += delta * 0.05;
+						if(seed && page){
+							if(!tookScreenshot){
+								uniformsNoise[ 'offset' ].value.x = randomNumber * 0.05;
+								setTimeout(() => {
+									takeScreenshot( PAGE_WIDTH, PAGE_HEIGHT, seed, page);
+								}, 500);
+								tookScreenshot = true;
+							}
+						}else{
+							uniformsNoise[ 'offset' ].value.x += delta * 0.05;
+						}
 
 						uniformsTerrain[ 'uOffset' ].value.x = 4 * uniformsNoise[ 'offset' ].value.x;
 
