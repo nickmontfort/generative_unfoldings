@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Qianxun Chen; Mariana Roa Oliva">
+  <title>Seedlings_:From Humus</title>
+
+  <!-- Preload font files to prevent wrong calculation of text width -->
+  <link rel="preload" href="font/SourceCodePro-Light.ttf.woff" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="font/SourceCodePro-Light.ttf" as="font" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="js/lib/seedrandom.min.js"></script>
+  <script src="js/lib/jquery.js"></script>
+  <script src="js/lib/rita-web.js"></script>
+  <script src="js/lib/jquery.svg.js"></script>
+  <script src="js/datamuse.js"></script>
+</head>
+
+<body>
+  <div class="content">
+    <!-- <div class="menu">
+      <h3>Seedlings_</h3>
+    <form class="command">
+        PLANT
+    <input type="text" placeholder="a word" name="word" value="">
+     IN
+    <input type="text" placeholder="a topic" name="domain" value="">
+    <input  id="run" type="submit" name="button" value="RUN">
+   </form>
+    </div> -->
+
+    <!-- load the d3.js library -->
+    <script src="js/lib/d3.v6.min.js"></script>
+    <script src="js/lib/d3-transition.v2.min.js"></script>
+    <script src="js/lib/perlin.js"></script>
+    <script src="js/seedlings.js"></script>
+    <script src="js/draw.js"></script>
+    <script src="js/lib/html2canvas.min.js"></script>
+    <script src="js/init.js"></script>
+  </div>
+  <div id="Test" class="test">
+  </div>
+  <div id="verticalTest" class="test">
+  </div>
+  <div id="plantTypes" class="contextMenu" data-html2canvas-ignore="true">
+    <ul>
+      <li class="button">bamboo</li>
+      <li class="button">dandelion</li>
+      <li class="button">ginkgo</li>
+      <li class="button">ivy</li>
+      <li class="button">pine</li>
+      <li class="button">plant</li>
+    </ul>
+  </div>
+  <div id="options" class="contextMenu" data-html2canvas-ignore="true">
+    <ul>
+      <li class="button" id="remove">Remove</li>
+    </ul>
+  </div>
+  <div id="aboutButton" data-html2canvas-ignore="true">
+    ?
+  </div>
+  <div id="about" data-html2canvas-ignore="true">
+    <div id="a">
+      <p> <i>Seedlings_:From Humus</i>
+        <br>
+        by <a href="https://chenqianxun.com">Qianxun Chen</a> & <a href="https://marianaroaoliva.com/">Mariana Roa Oliva</a><br>
+        <br>A digital ecosystem within which human and machine writers can collaborate in caring for linguistic seedlings composed of language.
+        <br>
+        Words act as seeds planted in different contextual soils, and an algorithm helps them to flourish by finding semantically or phonetically related words to create plant-inspired textual structures.
+      </p>
+      <p>
+        Instructions:<br>
+        [Press spacebar] to export the current view as an image.<br>
+        [Double click] a word to plant a random type of plant.<br>
+        [Right click] a word to plant a chosen type of plant.<br>
+        [Right click] on a plant to remove it.<br>
+        [Drag] a "soil" word to reposition it to different positions of the canvas.
+
+      </p>
+      <p class="specialThanks">
+        Special Thanks to Sawako Nakayasu, John Cayley and Daniel C. Howe.
+      </p>
+    </div>
+    <div id="b">
+
+    </div>
+    <div id="closeButton">
+      X
+    </div>
+  </div>
+
+</body>
+
+</html>
