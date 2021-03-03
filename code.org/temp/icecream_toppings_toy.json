@@ -1,0 +1,47 @@
+{
+  "defaultLabelColumn": "Liked",
+  "fields": [
+    {
+      "id": "Hot Fudge",
+      "type": "categorical",
+      "values": {
+        "categories": ["Yes", "No"]
+      }
+    },
+    {
+      "id": "Sprinkles",
+      "type": "categorical",
+      "values": {
+        "categories": ["Yes", "No"]
+      }
+    },
+    {
+      "id": "Whipped Cream",
+      "type": "categorical",
+      "values": {
+        "categories": ["Yes", "No"]
+      }
+    },
+    {
+      "id": "Cherry",
+      "type": "categorical",
+      "values": {
+        "categories": ["Yes", "No"]
+      }
+    },
+    {
+      "id": "Waffle Cone",
+      "type": "categorical",
+      "values": {
+        "categories": ["Yes", "No"]
+      }
+    },
+    {
+      "id": "Liked",
+      "type": "categorical",
+      "values": {
+        "categories": ["Yes", "No"]
+      }
+    }
+  ]
+}

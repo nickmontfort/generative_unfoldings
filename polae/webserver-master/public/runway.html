@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" src="css/runway.css">
+  <title>Webserver | Runway</title>
+  <!-- include this in your HTML file -->
+  <script src="https://cdn.jsdelivr.net/npm/@runwayml/hosted-models@0.3.0/dist/hosted-models.js"></script>
+</head>
+<body>
+  
+  <h1> RUNWAY</h1>
+  <h2 id="result1"> </h2>
+  <h2 id="result2"> </h2>
+
+  <script>
+    const model = new rw.HostedModel({
+      url: 'https://gpt-2-machine.hosted-models.runwayml.cloud/v1',
+      token: 'dy9dytwK9ZOdTUenwZ/xYg==',
+    });
+
+    const prompt = 'Hey text generation model, ';
+        model.query({ prompt }).then(result => { console.log('data directly from runway server: ', result)
+        document.getElementById('result1').innerText = 'request direct to runway: ' + result.generated_text;
+      })
+        async function getServer() {
+    const response = await fetch('http://localhost:3000/runway', {
+          method: 'POST',
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({'data' : prompt})
+        })
+              return response.json()
+            }
+    getServer().then(data => {
+          console.log('data from express server: ', data)
+          document.getElementById('result2').innerText = 'request through our own server: ' + data.generated_text
+        })
+  </script>
+  <script>
+
+  </script>
+
+  <!--
+  <script>
+    const model = new rw.HostedModel({
+      url: 'https://gpt-2-machine.hosted-models.runwayml.cloud/v1',
+      token: 'dy9dytwK9ZOdTUenwZ/xYg==',
+    });
+
+    //// You can use the info() method to see what type of input object the model expects
+    // model.info().then(info => console.log(info))
+
+    
+    
+    let awake_string = 'Awake: ' + model.isAwake();
+
+    document.getElementById("awake").innerText= awake_string;
+
+    const prompt = 'Hey text generation model, finish my sentence';
+ 
+    const inputs = {
+    "prompt": prompt,
+    "max_characters": 1024,
+    "top_p": .5,
+    " seed": 42
+    };
+    model.query(inputs).then(outputs => {
+    console.log(outputs);
+    });
+
+/*     document.getElementById("result").innerText = outputs; */
+
+</script>
+
+-->
+</body>
+</html>

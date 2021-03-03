@@ -1,0 +1,87 @@
+<<<<<<< HEAD
+{"fields": [{"type": "continuous", "id": "Number", "description": "The numerical ID for each Pok\u00e9mon."}, {"type": "categorical", "id": "Name", "description": "The name of the Pok\u00e9mon."}, {"type": "categorical", "id": "Type 1", "description": "The type of Pok\u00e9mon: this determines their weakness or resistance to attacks (e.g. a Water type is resistant to a Fire attack)"}, {"type": "categorical", "id": "Type 2", "description": "Some Pok\u00e9mon have two types. If it's not dual type, this will be N/A."}, {"type": "continuous", "id": "Total", "description": "The sum of  all their attack, defense, and speed statistics: a good general indicator of how strong the Pok\u00e9mon is."}, {"type": "continuous", "id": "HP", "description": "HP, or hit points: the amount of damage they can take before fainting."}, {"type": "continuous", "id": "Attack", "description": "Attack: their base attack strength for normal attacks (like Scratch or Punch)."}, {"type": "continuous", "id": "Defense", "description": "Defense: their base damage resistance against normal attacks."}, {"type": "continuous", "id": "Special Attack", "description": "Their base attack strength for special attacks (like Fire Blast or Bubble Beam)"}, {"type": "continuous", "id": "Special Defense", "description": "Their base damage resistance against special attacks."}, {"type": "continuous", "id": "Speed", "description": "This determines which Pok\u00e9mon attacks first each round."}, {"type": "categorical", "id": "Generation", "description": "The generation of the Pok\u00e9mon."}, {"type": "categorical", "id": "Legendary", "description": "Whether or not they are a Legendary Pok\u00e9mon."}], "card": {"description": "A dataset of information about 801 different Pok\u00e9mon.", "source": "Kaggle (https://www.kaggle.com/abcsds/pokemon)", "last_updated": "2016", "context": {"created_by": "", "preparation": "Yes", "confidentiality": "No", "subgroup_identifiers": "No", "potential_uses": "Predict whether a Pok\u00e9mon is legendary from its combination of attack and defense statistics.", "potential_misuses": ""}}, "recommended_features": ["Attack", "Defense", "Speed"], "recommended_label": "Legendary"}
+=======
+{
+  "fields": [
+    {
+      "type": "continuous",
+      "id": "#",
+      "description": "ID for each pokemon"
+    },
+    {
+      "type": "categorical",
+      "id": "Name",
+      "description": "Name of each pokemon"
+    },
+    {
+      "type": "categorical",
+      "id": "Type 1",
+      "description": "Each pokemon has a type, this determines weakness/resistance to attacks"
+    },
+    {
+      "type": "categorical",
+      "id": "Type 2",
+      "description": "Some pokemon are dual type and have 2"
+    },
+    {
+      "type": "continuous",
+      "id": "Total",
+      "description": "sum of all stats that come after this, a general guide to how strong a pokemon is"
+    },
+    {
+      "type": "continuous",
+      "id": "HP",
+      "description": "hit points, or health, defines how much damage a pokemon can withstand before fainting"
+    },
+    {
+      "type": "continuous",
+      "id": "Attack",
+      "description": "the base modifier for normal attacks (eg. Scratch, Punch)"
+    },
+    {
+      "type": "continuous",
+      "id": "Defense",
+      "description": "the base damage resistance against normal attacks"
+    },
+    {
+      "type": "continuous",
+      "id": "Sp. Atk",
+      "description": "special attack, the base modifier for special attacks (e.g. fire blast, bubble beam)"
+    },
+    {
+      "type": "continuous",
+      "id": "Sp. Def",
+      "description": "the base damage resistance against special attacks"
+    },
+    {
+      "type": "continuous",
+      "id": "Speed",
+      "description": "determines which pokemon attacks first each round"
+    },
+    {
+      "type": "categorical",
+      "id": "Generation",
+      "description": "Which generation the Pokemon is from"
+    },
+    {
+      "type": "categorical",
+      "id": "Legendary",
+      "description": "Whether or not the Pokemon is legendary"
+    }
+  ],
+  "card": {
+    "description": "This data set includes 721 Pokemon, including their number, name, first and second type, and basic stats: HP, Attack, Defense, Special Attack, Special Defense, and Speed.",
+    "source": "https://www.kaggle.com/abcsds/pokemon",
+    "last_updated": "Unknown",
+    "context": {
+      "created_by": "Unknown",
+      "preparation": "Yes",
+      "confidentiality": "No",
+      "subgroup_identifiers": "No",
+      "representative": "No",
+      "potential_uses": "",
+      "potential_misuses": ""
+    }
+  }
+}
+>>>>>>> 40a0ae7dc52958aa8cb9d2a5e4648c54ac66b9be

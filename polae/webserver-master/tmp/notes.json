@@ -1,0 +1,38 @@
+
+{ "index": 1,
+    "name": "The Creative",
+    "name-sino": "Qian",
+    'alternates': 'the key, force, god', 
+    'decription': 'The Creative embodies the active principle in the universe and represents initiating action. The lines in this hexagram refer to the Dragon which in China is honored as a benevolent and powerful creature. When this energy of empowerment remains dormant in the psyche we can give our power away. We can operate with the undermining or self gratifying and fearful behavior of the ego. This suppressed energy funds the Shadow in dreams, a great source of our original power. We therefore project and encounter it in others until we can own it and become fully empowered. An opportunity for expansion and authentic empowerment emerges which requires assertiveness and persistence. If you currently feel held back or victimized, remove the shackles because they are merely self limiting beliefs. Initiative is required to succeed, although it is important to move in sync with the time and respond with openness. The Creative is duplicated in the hidden influence position and underscores the idea of initiating where the Receptive as the underlying cause shows that a period of reflection and retreat must give way to active expression. A new burst of inspiration has gestated and you can now bring it life. There is great potential waiting for you to tap it.', 
+}
+{
+    index': 1,
+    'name': 'The Receptive',
+    'name-sino': 'K\'un',
+    'alternates': 'yielding', 
+    'decription': 'K’un calls for a period of patience and reflection. Where you may have been reactive in the past, it is time to learn how to be responsive. Reaction is a defensive position to uphold the known while responsiveness is open to the unknown. K’un encourages you to yield to the way each day is a creative awakening. A sense of openness and the release of clinging to structure and form will be necessary to give birth to this energy. The difference between reaction and response is your ability to use your senses and not the memory mind while observing. Stand in the moment with a sense of openness to what is unfolding without defending the past. Connect with each sense: Are you listening? Are you seeing how life speaks to you? Remove preconceptions and judgment. All things change in time and a period of action, reflected by the underlying cause of the Creative must give way to its opposite: Reflection. Like winter it is time to turn within and reinvigorate your inner world in preparation for a spring time to come. Embodying an open field in any activity – you are called to put your needs aside to serve, open and reflect before acting. K’un’s power of success comes from within. Move into the world from the inside ~ out. The Receptive is the womb holding the energy of attraction by way of intention that requires the development of sincerity and patience.',
+    
+})
+
+
+{"t":{"$date":"2020-11-27T06:52:30.863-05:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"main","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+{"t":{"$date":"2020-11-27T06:52:30.866-05:00"},"s":"W",  "c":"ASIO",     "id":22601,   "ctx":"main","msg":"No TransportLayer configured during NetworkInterface startup"}
+{"t":{"$date":"2020-11-27T06:52:30.866-05:00"},"s":"I",  "c":"NETWORK",  "id":4648602, "ctx":"main","msg":"Implicit TCP FastOpen in use."}
+{"t":{"$date":"2020-11-27T06:52:30.866-05:00"},"s":"I",  "c":"STORAGE",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":5194,"port":27017,"dbPath":"/Users/johnsteven/data/db","architecture":"64-bit","host":"Johns-MacBook-Pro"}}
+{"t":{"$date":"2020-11-27T06:52:30.866-05:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"4.4.1","gitVersion":"ad91a93a5a31e175f5cbf8c69561e788bbc55ce1","modules":[],"allocator":"system","environment":{"distarch":"x86_64","target_arch":"x86_64"}}}}
+{"t":{"$date":"2020-11-27T06:52:30.867-05:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Mac OS X","version":"19.6.0"}}}
+{"t":{"$date":"2020-11-27T06:52:30.867-05:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"storage":{"dbPath":"/Users/johnsteven/data/db"}}}}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"E",  "c":"STORAGE",  "id":20568,   "ctx":"initandlisten","msg":"Error setting up listener","attr":{"error":{"code":9001,"codeName":"SocketException","errmsg":"Address already in use"}}}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"initandlisten","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":10000}}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"initandlisten","msg":"Shutting down the MirrorMaestro"}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"initandlisten","msg":"Shutting down the WaitForMajorityService"}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"initandlisten","msg":"Shutting down the global connection pool"}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"initandlisten","msg":"Shutting down the ReplicaSetMonitor"}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"SHARDING", "id":4784921, "ctx":"initandlisten","msg":"Shutting down the MigrationUtilExecutor"}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"CONTROL",  "id":4784925, "ctx":"initandlisten","msg":"Shutting down free monitoring"}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"FTDC",     "id":4784926, "ctx":"initandlisten","msg":"Shutting down full-time data capture"}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"STORAGE",  "id":4784927, "ctx":"initandlisten","msg":"Shutting down the HealthLog"}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"STORAGE",  "id":4784929, "ctx":"initandlisten","msg":"Acquiring the global lock for shutdown"}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"-",        "id":4784931, "ctx":"initandlisten","msg":"Dropping the scope cache for shutdown"}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"initandlisten","msg":"Now exiting"}
+{"t":{"$date":"2020-11-27T06:52:30.868-05:00"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"initandlisten","msg":"Shutting down","attr":{"exitCode":48}}

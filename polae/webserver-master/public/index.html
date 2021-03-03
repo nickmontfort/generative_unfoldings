@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHING</title>
+  <link rel="stylesheet" href="css/webserver.css">
+</head>
+<body>
+  
+<h1>
+  ICHING
+</h1>
+
+<div class="box">
+ 
+    <button onclick="castHex()"> CAST </button>
+    <div id="cast">Cast your I Ching.</div>
+
+</div>
+
+
+<script> 
+  function castHex() {
+    let cast = Math.round(Math.random()*8)+1;
+    document.getElementById("cast").innerText = cast;
+  }
+</script>
+
+</body>
+</html>

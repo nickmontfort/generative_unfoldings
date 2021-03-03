@@ -1,0 +1,52 @@
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+h1 { 
+  text-align: center;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-59%,-50%);
+  color: black;
+  padding: 8px 16px;
+  background: white;
+  border-style: black solid 1px;
+  text-decoration: none;
+  outline: none;
+}
+
+.box {
+  position: fixed;
+  width: 256px;
+  height: 256px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-59%,-50%);
+  border: black solid 1px;
+}
+
+
+#cast {
+  text-align: center;
+  width: 128px;
+  height: 64px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
